@@ -17,6 +17,9 @@ export  function Login (props:any) {
     const goToSignUp = ()=>{
         props.navigation.navigate('Sign Up');
     }
+    const login = ()=>{
+        props.navigation.navigate('Dashboard');
+    }
   return (
     <ScrollView style={{flex:1}} contentContainerStyle={{flexGrow:1,flexDirection:'column',justifyContent:'center'}}>
         <View style={styles.container}>
@@ -30,7 +33,7 @@ export  function Login (props:any) {
                         <Text onPress={togglePassword}>Show password</Text>
                     </View>
                     <View style={styles.loginBtnWrap}>
-                        <PrimaryButton >Login</PrimaryButton>
+                        <PrimaryButton onPress={login}>Login</PrimaryButton>
                     </View>
                 </View>
                 <View style={styles.signUpWrap}>

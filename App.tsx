@@ -1,8 +1,7 @@
 import React from 'react';
 import { BaseLayout } from './app/core/Layouts';
-import { Login, SignUp } from './screens';
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
-import { NavigationContainer } from '@react-navigation/native';
+import 'react-native-gesture-handler';
 import RootNavigator from './Navigators/root';
 
 
